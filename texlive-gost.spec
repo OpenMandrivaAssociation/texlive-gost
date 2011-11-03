@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/gost
+# catalog-date 2007-01-04 14:33:27 +0100
+# catalog-license lppl
+# catalog-version 2005.08.12
 Name:		texlive-gost
 Version:	2005.08.12
 Release:	1
@@ -50,6 +56,7 @@ Ukrainian according to GOST 7.1-84 and GOST 7.80-00.
 #- source
 %doc %{_texmfdistdir}/source/bibtex/gost/gost.dtx
 %doc %{_texmfdistdir}/source/bibtex/gost/gost.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ Ukrainian according to GOST 7.1-84 and GOST 7.80-00.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
