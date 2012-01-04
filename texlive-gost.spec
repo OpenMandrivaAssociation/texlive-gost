@@ -6,7 +6,7 @@
 # catalog-version 2005.08.12
 Name:		texlive-gost
 Version:	2005.08.12
-Release:	1
+Release:	2
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
