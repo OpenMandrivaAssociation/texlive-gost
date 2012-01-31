@@ -1,12 +1,12 @@
-# revision 15878
+# revision 25194
 # category Package
 # catalog-ctan /biblio/bibtex/contrib/gost
-# catalog-date 2007-01-04 14:33:27 +0100
+# catalog-date 2012-01-25 00:32:12 +0100
 # catalog-license lppl
-# catalog-version 2005.08.12
+# catalog-version undef
 Name:		texlive-gost
-Version:	2005.08.12
-Release:	2
+Version:	20120125
+Release:	1
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
@@ -21,7 +21,12 @@ Requires(post):	texlive-kpathsea
 
 %description
 BibTeX styles to format bibliography in English, Russian and
-Ukrainian according to GOST 7.1-84 and GOST 7.80-00.
+Ukrainian according to GOST 7.0.5-2008, GOST 7.1-2003, GOST
+7.80-2000 and GOST 7.11-2004. Both 8-bit and Unicode (UTF-8)
+versions of each BibTeX style, in each case offering a choice
+of sorted and unsorted. Further, a set of three styles (which
+do not conform to current standards) are retained for backwards
+compatibility.
 
 %post
     %{_sbindir}/texlive.post
@@ -33,19 +38,29 @@ Ukrainian according to GOST 7.1-84 and GOST 7.80-00.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/gost/gost71s.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost71u.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost705s.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost705u.bst
 %{_texmfdistdir}/bibtex/bst/gost/gost780s.bst
 %{_texmfdistdir}/bibtex/bst/gost/gost780u.bst
+%{_texmfdistdir}/bibtex/bst/gost/unicode-gost705s.bst
+%{_texmfdistdir}/bibtex/bst/gost/unicode-gost705u.bst
+%{_texmfdistdir}/bibtex/bst/gost/unicode-gost780s.bst
+%{_texmfdistdir}/bibtex/bst/gost/unicode-gost780u.bst
 %{_texmfdistdir}/bibtex/csf/gost/cp1251.csf
 %{_texmfdistdir}/bibtex/csf/gost/koi8u.csf
 %{_texmfdistdir}/bibtex/csf/gost/ruscii.csf
+%{_texmfdistdir}/bibtex/csf/gost/utf8cyrillic.csf
 %doc %{_texmfdistdir}/doc/bibtex/gost/README
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost71.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost705-custom.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost705-sorted.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost705-unsorted.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost705.pdf
 %doc %{_texmfdistdir}/doc/bibtex/gost/gost780.pdf
 #- source
 %doc %{_texmfdistdir}/source/bibtex/gost/gost.dtx
 %doc %{_texmfdistdir}/source/bibtex/gost/gost.ins
+%doc %{_texmfdistdir}/source/bibtex/gost/unicode-gost.dtx
+%doc %{_texmfdistdir}/source/bibtex/gost/unicode-gost.ins
 
 #-----------------------------------------------------------------------
 %prep
