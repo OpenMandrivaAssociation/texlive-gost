@@ -1,11 +1,12 @@
-# revision 25194
+# revision 25450
 # category Package
 # catalog-ctan /biblio/bibtex/contrib/gost
-# catalog-date 2012-01-25 00:32:12 +0100
+# catalog-date 2012-02-20 16:14:33 +0100
 # catalog-license lppl
-# catalog-version undef
+# catalog-version 1.2
 Name:		texlive-gost
-Version:	20120125
+Epoch:		1
+Version:	1.2
 Release:	1
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
@@ -20,13 +21,12 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-BibTeX styles to format bibliography in English, Russian and
-Ukrainian according to GOST 7.0.5-2008, GOST 7.1-2003, GOST
-7.80-2000 and GOST 7.11-2004. Both 8-bit and Unicode (UTF-8)
-versions of each BibTeX style, in each case offering a choice
-of sorted and unsorted. Further, a set of three styles (which
-do not conform to current standards) are retained for backwards
-compatibility.
+BibTeX styles to format bibliographies in English, Russian or
+Ukrainian according to GOST 7.0.5-2008 or GOST 7.1-2003. Both
+8-bit and Unicode (UTF-8) versions of each BibTeX style, in
+each case offering a choice of sorted and unsorted. Further, a
+set of three styles (which do not conform to current standards)
+are retained for backwards compatibility.
 
 %post
     %{_sbindir}/texlive.post
@@ -38,29 +38,41 @@ compatibility.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/gost/gost705s.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost705u.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2003.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2003s.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2008.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2008l.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2008ls.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2008n.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2008ns.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost2008s.bst
+%{_texmfdistdir}/bibtex/bst/gost/gost780.bst
 %{_texmfdistdir}/bibtex/bst/gost/gost780s.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost780u.bst
-%{_texmfdistdir}/bibtex/bst/gost/unicode-gost705s.bst
-%{_texmfdistdir}/bibtex/bst/gost/unicode-gost705u.bst
-%{_texmfdistdir}/bibtex/bst/gost/unicode-gost780s.bst
-%{_texmfdistdir}/bibtex/bst/gost/unicode-gost780u.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2003.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2003s.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2008.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2008l.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2008ls.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2008n.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2008ns.bst
+%{_texmfdistdir}/bibtex/bst/gost/ugost2008s.bst
 %{_texmfdistdir}/bibtex/csf/gost/cp1251.csf
 %{_texmfdistdir}/bibtex/csf/gost/koi8u.csf
 %{_texmfdistdir}/bibtex/csf/gost/ruscii.csf
 %{_texmfdistdir}/bibtex/csf/gost/utf8cyrillic.csf
 %doc %{_texmfdistdir}/doc/bibtex/gost/README
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost705-custom.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost705-sorted.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost705-unsorted.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost705.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2003.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-customized.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-natbib-s.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-natbib.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-sorted.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008.pdf
+%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008l.pdf
 %doc %{_texmfdistdir}/doc/bibtex/gost/gost780.pdf
 #- source
 %doc %{_texmfdistdir}/source/bibtex/gost/gost.dtx
 %doc %{_texmfdistdir}/source/bibtex/gost/gost.ins
-%doc %{_texmfdistdir}/source/bibtex/gost/unicode-gost.dtx
-%doc %{_texmfdistdir}/source/bibtex/gost/unicode-gost.ins
 
 #-----------------------------------------------------------------------
 %prep
