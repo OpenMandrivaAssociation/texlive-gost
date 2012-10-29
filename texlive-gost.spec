@@ -1,12 +1,12 @@
-# revision 25450
+# revision 27642
 # category Package
 # catalog-ctan /biblio/bibtex/contrib/gost
-# catalog-date 2012-02-20 16:14:33 +0100
+# catalog-date 2012-09-10 13:53:05 +0200
 # catalog-license lppl
-# catalog-version 1.2
+# catalog-version 1.2a
 Name:		texlive-gost
 Epoch:		1
-Version:	1.2
+Version:	1.2a
 Release:	1
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
