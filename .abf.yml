@@ -1,4 +1,4 @@
 sources:
-  "gost.doc.tar.xz:"	c4a8a99d2840bb5422aa429f51c6e9fbcfa05821
-  "gost.source.tar.xz:"	28b10783f1211b2a3187f08bab1819ebfea51e19
-  "gost.tar.xz:"	76db01603479df9f2c0eec1110faa099134a2d90
+  gost.doc.tar.xz: c4a8a99d2840bb5422aa429f51c6e9fbcfa05821
+  gost.source.tar.xz: 28b10783f1211b2a3187f08bab1819ebfea51e19
+  gost.tar.xz: 76db01603479df9f2c0eec1110faa099134a2d90
