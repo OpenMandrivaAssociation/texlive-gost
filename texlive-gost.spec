@@ -7,7 +7,7 @@
 Name:		texlive-gost
 Epoch:		1
 Version:	1.2a
-Release:	4
+Release:	5
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
