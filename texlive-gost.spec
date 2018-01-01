@@ -1,13 +1,7 @@
-# revision 27642
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/gost
-# catalog-date 2012-09-10 13:53:05 +0200
-# catalog-license lppl
-# catalog-version 1.2a
 Name:		texlive-gost
 Epoch:		1
-Version:	1.2a
-Release:	9
+Version:	1.2i
+Release:	1
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
@@ -38,41 +32,11 @@ are retained for backwards compatibility.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/gost/gost2003.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2003s.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2008.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2008l.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2008ls.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2008n.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2008ns.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost2008s.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost780.bst
-%{_texmfdistdir}/bibtex/bst/gost/gost780s.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2003.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2003s.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2008.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2008l.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2008ls.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2008n.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2008ns.bst
-%{_texmfdistdir}/bibtex/bst/gost/ugost2008s.bst
-%{_texmfdistdir}/bibtex/csf/gost/cp1251.csf
-%{_texmfdistdir}/bibtex/csf/gost/koi8u.csf
-%{_texmfdistdir}/bibtex/csf/gost/ruscii.csf
-%{_texmfdistdir}/bibtex/csf/gost/utf8cyrillic.csf
-%doc %{_texmfdistdir}/doc/bibtex/gost/README
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2003.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-customized.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-natbib-s.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-natbib.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008-sorted.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost2008l.pdf
-%doc %{_texmfdistdir}/doc/bibtex/gost/gost780.pdf
+%{_texmfdistdir}/bibtex/bst/gost
+%{_texmfdistdir}/bibtex/csf/gost
+%doc %{_texmfdistdir}/doc/bibtex/gost
 #- source
-%doc %{_texmfdistdir}/source/bibtex/gost/gost.dtx
-%doc %{_texmfdistdir}/source/bibtex/gost/gost.ins
+%doc %{_texmfdistdir}/source/bibtex/gost
 
 #-----------------------------------------------------------------------
 %prep
