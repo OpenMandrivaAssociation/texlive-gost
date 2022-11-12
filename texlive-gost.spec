@@ -1,14 +1,14 @@
 Name:		texlive-gost
 Epoch:		1
-Version:	1.2i
-Release:	2
+Version:	57616
+Release:	1
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +23,12 @@ set of three styles (which do not conform to current standards)
 are retained for backwards compatibility.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -40,7 +40,8 @@ are retained for backwards compatibility.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
