@@ -4,7 +4,7 @@ Version:	57616
 Release:	2
 Summary:	BibTeX styles to format according to GOST
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gost.doc.r%{version}.tar.xz
